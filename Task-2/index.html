@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dessert Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dessert Planner</h1>
+    <p>Organize your sweet cravings 🍩 with our Dessert To-Do List</p>
+  </header>
+
+  <section class="gallery-section">
+    <h2>Choose Your Favorite Desserts</h2>
+    <div class="dessert-gallery">
+      <div class="dessert-card">
+        <img src="C:\Users\ASUS\OneDrive\Desktop\chocolate cake.jpg" alt="Chocolate Cake" />
+        <h3>Chocolate Cake</h3>
+        <p>Rich and moist dark chocolate cake 🍫</p>
+        <button onclick="addTask('Chocolate Cake')">Add to List</button>
+      </div>
+      <div class="dessert-card">
+        <img src="C:\Users\ASUS\OneDrive\Desktop\bleberry cake.jpg" alt="Blueberry Tart" />
+        <h3>Blueberry Tart</h3>
+        <p>Crispy tart with fresh blueberries 🫐</p>
+        <button onclick="addTask('Blueberry Tart')">Add to List</button>
+      </div>
+      <div class="dessert-card">
+        <img src="C:\Users\ASUS\OneDrive\Desktop\gulabjamun.png" alt="Gulab Jamun" />
+        <h3>Gulab Jamun</h3>
+        <p>Soft Indian delight soaked in syrup 🍯</p>
+        <button onclick="addTask('Gulab Jamun')">Add to List</button>
+      </div>
+      <div class="dessert-card">
+        <img src="C:\Users\ASUS\OneDrive\Desktop\maracons.jpg" alt="Macarons" />
+        <h3>Macarons</h3>
+        <p>Colorful almond-based French sweets 💖</p>
+        <button onclick="addTask('Macarons')">Add to List</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="todo-section">
+    <h2>Your Dessert To-Do List</h2>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section class="form-section">
+    <h2>Contact Us</h2>
+    <form id="form" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Dessert Planner | Task-2 for ApexPlanet</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

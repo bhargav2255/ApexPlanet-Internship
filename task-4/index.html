@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlantPal App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🌿 PlantPal</h1>
+    <p>Your Green Shopping Companion</p>
+  </header>
+
+  <section class="shop-section">
+    <h2>🪴 Available Plants</h2>
+    <div class="controls">
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="indoor">Indoor</option>
+        <option value="outdoor">Outdoor</option>
+        <option value="rare">Rare</option>
+      </select>
+      <select id="sortFilter">
+        <option value="default">Sort</option>
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+    <div id="plantList" class="plant-grid"></div>
+  </section>
+
+  <section class="note-section">
+    <h2>📝 Gardener's Notes</h2>
+    <div class="note-controls">
+      <input type="text" id="noteInput" placeholder="Water Aloe Vera tomorrow..." />
+      <button onclick="addNote()">Add</button>
+    </div>
+    <ul id="noteList"></ul>
+  </section>
+
+  <section class="contact-section">
+    <h2>📩 Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Ask for a plant or share feedback..."></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

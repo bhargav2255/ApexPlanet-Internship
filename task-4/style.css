@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1b1b1b;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #a5d6a7;
+}
+.app-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #81c784;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+select {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.product {
+  background-color: #2e2e2e;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.product h3 {
+  margin: 10px 0 5px;
+}
+.product p {
+  color: #b2dfdb;
+}
+
+.note-section, .contact-section {
+  margin-top: 40px;
+}
+.note-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#noteList li {
+  background-color: #2e2e2e;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #2e2e2e;
+  color: white;
+}
